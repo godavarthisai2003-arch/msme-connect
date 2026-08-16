@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSME Connect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            MSME Connect
+        </div>
+
+        <div class="profile">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+    </header>
+
+
+    <!-- Search -->
+
+    <section class="search">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="Search MSME..."
+        >
+
+    </section>
+    <section class="add-section">
+
+    <button id="addBtn">
+        ➕ Add MSME
+    </button>
+    <div id="formContainer" style="display:none;">
+
+    <input type="text" id="name" placeholder="Company Name">
+
+    <input type="text" id="description" placeholder="Description">
+
+    <input type="text" id="offering" placeholder="Offering">
+
+    <input type="text" id="category" placeholder="Category">
+
+    <input type="text" id="location" placeholder="Location">
+
+    <input type="text" id="phone" placeholder="Phone">
+
+    <input type="email" id="email" placeholder="Email">
+
+    <input type="number" id="rating" placeholder="Rating">
+
+    <button id="saveBtn">
+        Save MSME
+    </button>
+
+</div>
+
+</section>
+
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <button class="active">All</button>
+        <button>Manufacturing</button>
+        <button>IT</button>
+        <button>Food</button>
+        <button>Agriculture</button>
+
+    </section>
+
+
+    <!-- MSME Cards -->
+
+    <main id="cardContainer">
+
+        <!-- Cards will come from JavaScript -->
+
+    </main>
+
+
+
+    <!-- Bottom Navigation -->
+
+    <nav class="bottom-nav">
+
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Categories</span>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-bookmark"></i>
+            <span>Saved</span>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-user"></i>
+            <span>Profile</span>
+        </div>
+
+    </nav>
+    <nav class="bottom-nav">
+
+    <div onclick="goHome()">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </div>
+
+    <div onclick="goCategory()">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Categories</span>
+    </div>
+
+    <div onclick="showSaved()">
+        <i class="fa-solid fa-bookmark"></i>
+        <span>Saved</span>
+    </div>
+
+    <div onclick="showProfile()">
+        <i class="fa-solid fa-user"></i>
+        <span>Profile</span>
+    </div>
+
+</nav>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
